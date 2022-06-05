@@ -79,3 +79,8 @@ canvas {
   .left {
     grid-column: 6 / 12;
   }
+
+  #page0-div {
+  width: 50%;
+  margin: 0 auto;
+}
