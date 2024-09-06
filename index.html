@@ -7,74 +7,61 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<canvas></canvas>
-
-<main>
-  <header>
-    <h1>Welcome to Yasir's Portfolio</h1>
-  </header>
-
-  <section>
-    <h2>IoT for Home Automation</h2>
-    <p>
-      Designed a Home automation system with IoT. The design consists of a Raspberry Pi 2 model B, 
-      4 Arduino Nano boards, 5 nRF24L01 wireless modules, sensors, relays, other essential electronic 
-      components, and the Adafruit IoT platform via io.adafruit.com.
-    </p>
-    <p>
-      The Raspberry Pi’s SPI interface connects the nRF24L01 wireless transceiver module. Sensors and 
-      relays connected to Arduino slaves communicate wirelessly via nRF24L01.
-    </p>
-  </section>
-
-  <blockquote>
-    <p>Home Automation is the future of smart living.</p>
-  </blockquote>
-
-  <section class="left">
-    <h3>IFTTT and MQTT Protocols</h3>
-    <p>
-      A machine-to-machine (M2M) protocol, MQTT is used for communication. Additionally, IFTTT is 
-      integrated for enhanced automation and connectivity between various services.
-    </p>
-  </section>
-
-  <section>
-    <h3>Programming and Data Flow</h3>
-    <p>
-      Using MQTT client library, I wrote Python code to receive sensor data and feed it to the IoT 
-      platform. Testing was done using MQTT.fx, and the data successfully reached the IoT platform.
-    </p>
-    <p>
-      The slaves are controlled using C++ to handle the wireless module nRF24L01, while Python code 
-      feeds data to Adafruit IO, as shown in the architecture diagram.
-    </p>
-  </section>
-
-  <section id="image-gallery">
-    <h2>Project Screenshots</h2>
-    <div class="image-grid">
-      <img src="images/target001.png" alt="Screenshot 1">
-      <img src="images/target002.png" alt="Screenshot 2">
-      <img src="images/target003.png" alt="Screenshot 3">
-      <img src="images/target004.png" alt="Screenshot 4">
-      <img src="images/target005.png" alt="Screenshot 5">
-      <img src="images/target006.png" alt="Screenshot 6">
-      <img src="images/target007.png" alt="Screenshot 7">
-      <img src="images/target008.png" alt="Screenshot 8">
-      <img src="images/target009.png" alt="Screenshot 9">
-      <img src="images/target010.png" alt="Screenshot 10">
-      <img src="images/target011.png" alt="Screenshot 11">
-      <img src="images/target012.png" alt="Screenshot 12">
-      <img src="images/target013.png" alt="Screenshot 13">
-      <img src="images/target014.png" alt="Screenshot 14">
-      <img src="images/target015.png" alt="Screenshot 15">
-      <img src="images/target016.png" alt="Screenshot 16">
+  <main>
+    <header>
+      <h1>Yasir's Portfolio</h1>
+    </header>
+    
+    <div id="image-gallery">
+      <div class="image-container">
+        <img src="target001.png" alt="Page 1">
+      </div>
+      <div class="image-container">
+        <img src="target002.png" alt="Page 2">
+      </div>
+      <div class="image-container">
+        <img src="target003.png" alt="Page 3">
+      </div>
+      <div class="image-container">
+        <img src="target004.png" alt="Page 4">
+      </div>
+      <div class="image-container">
+        <img src="target005.png" alt="Page 5">
+      </div>
+      <div class="image-container">
+        <img src="target006.png" alt="Page 6">
+      </div>
+      <div class="image-container">
+        <img src="target007.png" alt="Page 7">
+      </div>
+      <div class="image-container">
+        <img src="target008.png" alt="Page 8">
+      </div>
+      <div class="image-container">
+        <img src="target009.png" alt="Page 9">
+      </div>
+      <div class="image-container">
+        <img src="target010.png" alt="Page 10">
+      </div>
+      <div class="image-container">
+        <img src="target011.png" alt="Page 11">
+      </div>
+      <div class="image-container">
+        <img src="target012.png" alt="Page 12">
+      </div>
+      <div class="image-container">
+        <img src="target013.png" alt="Page 13">
+      </div>
+      <div class="image-container">
+        <img src="target014.png" alt="Page 14">
+      </div>
+      <div class="image-container">
+        <img src="target015.png" alt="Page 15">
+      </div>
+      <div class="image-container">
+        <img src="target016.png" alt="Page 16">
+      </div>
     </div>
-  </section>
-
-</main>
-
+  </main>
 </body>
 </html>
