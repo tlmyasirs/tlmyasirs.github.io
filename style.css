@@ -76,8 +76,31 @@ blockquote p {
   margin: 0 auto;
 }
 
+#image-gallery {
+  grid-column: 2 / 12;
+  margin-top: var(--spacing);
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
-  header, section, blockquote {
+  header, section, blockquote, #image-gallery {
     grid-column: 1 / -1;
     padding: 1rem;
     margin-bottom: 2rem;
@@ -85,5 +108,9 @@ blockquote p {
 
   blockquote p {
     font-size: 2rem;
+  }
+
+  .image-grid img {
+    width: 100%;
   }
 }
