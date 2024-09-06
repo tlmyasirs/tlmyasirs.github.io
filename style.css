@@ -17,17 +17,27 @@ canvas {
   z-index: 1;
 }
 
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black; /* Adjust the background color as needed */
+}
+
 main {
   width: 100vw;
+  max-width: 1200px; /* Optional max width to limit content width */
   color: white;
   z-index: 99;
   position: relative;
-  margin: 0 auto;
-  padding: 120px 0;
+  padding: 20px 0;
   
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h1, h2, h3, blockquote {
@@ -38,25 +48,25 @@ h1, h2, h3, blockquote {
 
 header {
   background: var(--dark-bg);
-  grid-column: 2 / span 5;
   font-size: 2.5rem;
   padding: 2rem;
   margin-bottom: var(--spacing);
+  text-align: center;
 }
 
 section {
-  grid-column: 2 / 8;
   padding: 1rem;
   background: var(--dark-bg);
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: var(--spacing);
+  text-align: center;
 }
 
 blockquote {
-  grid-column: 2 / span 9;
   margin: 0;
   margin-bottom: var(--spacing);
+  text-align: center;
 }
 
 blockquote p {
@@ -67,23 +77,34 @@ blockquote p {
   line-height: 1;
 }
 
-.left {
-  grid-column: 6 / 12;
+#image-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#page0-div {
-  width: 50%;
+.image-container {
+  margin-bottom: 1rem;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
   margin: 0 auto;
 }
 
 @media (max-width: 768px) {
-  header, section, blockquote {
-    grid-column: 1 / -1;
+  header, section, blockquote, #image-gallery {
     padding: 1rem;
     margin-bottom: 2rem;
   }
 
   blockquote p {
     font-size: 2rem;
+  }
+
+  .image-container img {
+    width: 100%;
   }
 }
