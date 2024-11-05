@@ -18,46 +18,50 @@ a:hover {
 
 /* Main Container */
 .container {
-    width: 892px;
+    width: 100%;
+    max-width: 900px; /* Limits the container width */
     margin: 0 auto;
     text-align: center;
     padding-top: 20px;
 }
 
-/* Page and Content Layout */
+/* Page and Image Styles */
 .page {
     position: relative;
-    width: 892px;
-    height: 1262px;
+    width: 100%;
+    max-width: 900px;
     margin-bottom: 20px;
+    overflow: hidden; /* Prevents overflow issues */
 }
 
 .page img {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Responsive width to fit within container */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 0 auto; /* Centers the image */
 }
 
 /* Text and Section Styles */
 .title {
     font-size: 1.5em;
     color: #005f5f;
+    margin-top: 15px;
     margin-bottom: 0.5em;
-    text-align: left;
-    padding: 10px;
+    text-align: center;
 }
 
 .text {
     font-size: 1em;
     line-height: 1.6;
-    margin-bottom: 1em;
+    margin: 10px 20px;
     text-align: left;
-    padding: 10px;
 }
 
 .caption {
     font-style: italic;
     color: #555;
     font-size: 0.9em;
-    text-align: center;
     margin-top: 10px;
+    text-align: center;
+    padding-bottom: 15px;
 }
