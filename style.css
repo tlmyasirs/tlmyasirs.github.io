@@ -18,7 +18,7 @@ a:hover {
 
 /* Main Container */
 .container {
-    width: 100%;
+    width: 100vw;;
     max-width: 900px; /* Limits the container width */
     margin: 0 auto;
     text-align: center;
@@ -28,17 +28,26 @@ a:hover {
 /* Page and Image Styles */
 .page {
     position: relative;
-    width: 100%;
+    width: 100vw;
     max-width: 900px;
     margin-bottom: 20px;
     overflow: hidden; /* Prevents overflow issues */
 }
 
 .page img {
-    width: 100%; /* Responsive width to fit within container */
+    width: 100vw; /* Responsive width to fit within container */
     height: auto; /* Maintains aspect ratio */
     display: block;
     margin: 0 auto; /* Centers the image */
+}
+
+div {
+  /* Styles applied to all div elements */
+    position: relative;
+    width: 100vw;
+    max-width: 900px;
+    margin-bottom: 20px;
+    overflow: hidden; /* Prevents overflow issues */
 }
 
 /* Text and Section Styles */
